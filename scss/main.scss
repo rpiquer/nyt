@@ -1,5 +1,6 @@
 @import
-'01_utilities/_variables.scss';
+'01_utilities/_variables.scss',
+'01_utilities/fonts/fonts.scss';
 
 @import
 '02_base.scss/_typography.scss';
@@ -10,7 +11,8 @@
 
 @import
 '04_components/_c-header.scss',
-'04_components/c-subheader.scss';
+'04_components/_c-subheader.scss',
+'04_components/c-noticia.scss';
 
 @import
 '05_pages/_home.scss';
