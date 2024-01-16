@@ -1,0 +1,15 @@
+:root{
+  @each $color, $lista in $color-array{
+    @for $i from 1 through length($lista){
+      --color-#{$color}-#{$i}: #{nth($lista, $i)};
+    }
+  }
+}
+
+@each $color, $lista in $color-array{
+  @for $i from 1 through length($lista){
+    .g--color-#{$color}-#{$i}{
+      color: nth($lista, $i);
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.c-header{
+    --c-subheader-border-color: var(--color-black-5);
+
+    border-bottom: 1px solid var(--c-subheader-border-color);
+    padding: 25px;
+    & img{
+        height: 25px;
+    }
+}

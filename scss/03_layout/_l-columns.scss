@@ -1,0 +1,16 @@
+.l-columns{
+  display: grid;
+  padding:  20px;
+  max-width: 80%;
+  &--2{
+    grid-template-columns: repeat(2,1fr);
+  }
+  &--3{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &--4{
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+}

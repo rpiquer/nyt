@@ -1,0 +1,109 @@
+$paddings: 0px, 4px, 6px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px, 96px, 128px, 160px, 192px, 224px, 256px, 320px, 480px, 640px;
+
+
+.g--padding{
+  @for $i from 1 through length($paddings){
+      &-#{$i}{
+        padding: nth($paddings, $i);
+      }
+
+  }
+}
+
+@for $i from 1 through length($paddings){
+  .g--padding-#{$i}{
+    padding: nth($paddings, $i);
+  }
+  @for $i from 1 through length($paddings){
+    .g--padding-x-#{$i}{
+      padding-left: nth($paddings, $i);
+      padding-right: nth($paddings, $i);
+    }
+  }
+
+  @for $i from 1 through length($paddings){
+    .g--padding-y-#{$i}{
+      padding-top: nth($paddings, $i);
+      padding-bottom: nth($paddings, $i);
+    }
+  }
+
+  @for $i from 1 through length($paddings){
+    .g--padding-top-#{$i}{
+      padding-top: nth($paddings, $i);
+    }
+  }
+  @for $i from 1 through length($paddings){
+    .g--padding-right-#{$i}{
+      padding-right: nth($paddings, $i);
+    }
+  }
+  @for $i from 1 through length($paddings){
+    .g--padding-bottom-#{$i}{
+      padding-bottom: nth($paddings, $i);
+    }
+  }
+  @for $i from 1 through length($paddings){
+    .g--padding-left-#{$i}{
+      padding-left: nth($paddings, $i);
+    }
+  }
+}
+
+@for $i from 1 through length($paddings){
+  .g--padding-x-#{$i}{
+    padding-left: nth($paddings, $i);
+    padding-right: nth($paddings, $i);
+  }
+}
+
+@for $i from 1 through length($paddings){
+  .g--padding-y-#{$i}{
+    padding-top: nth($paddings, $i);
+    padding-bottom: nth($paddings, $i);
+  }
+}
+
+@for $i from 1 through length($paddings){
+  .g--padding-top-#{$i}{
+    padding-top: nth($paddings, $i);
+  }
+}
+
+@for $i from 1 through length($paddings){
+  .g--padding-right-#{$i}{
+    padding-right: nth($paddings, $i);
+  }
+}
+
+@for $i from 1 through length($paddings){
+  .g--padding-bottom-#{$i}{
+    padding-bottom: nth($paddings, $i);
+  }
+}
+
+@for $i from 1 through length($paddings){
+  .g--padding-left-#{$i}{
+    padding-left: nth($paddings, $i);
+  }
+}
+
+//$index: 0;
+// @each $value in $paddings {
+//  .g--padding-#{$index} {
+//    padding: $value;
+//  }
+//  $index: $index + 1;
+//}
+
+
+
+
+
+
+
+
+
+
+
+

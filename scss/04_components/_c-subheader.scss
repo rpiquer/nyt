@@ -1,0 +1,16 @@
+.c-subheader{
+    --c-subheader-subscribe-text-color: var(--color-blue-2);
+    --c-subheader-border-color: var(--color-black-5);
+
+    border-bottom: 1px solid var(--c-subheader-border-color);
+    font-size: 10px;
+    padding: 25px;
+    &__date{
+        font-weight: bold;
+    }
+
+    &__subscribe{
+        color: var(--c-subheader-subscribe-text-color);
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,65 @@
+$margins: 0px, 4px, 6px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px, 96px, 128px, 160px, 192px, 224px, 256px, 320px, 480px, 640px;
+
+@for $i from 1 through length($margins){
+  .g--margin-#{$i}{
+    margin: nth($margins, $i);
+  }
+}
+
+@for $i from 1 through length($margins){
+  .g--margin-x-#{$i}{
+    margin-left: nth($margins, $i);
+    margin-right: nth($margins, $i);
+  }
+}
+
+@for $i from 1 through length($margins){
+  .g--margin-y-#{$i}{
+    margin-top: nth($margins, $i);
+    margin-bottom: nth($margins, $i);
+  }
+}
+
+@for $i from 1 through length($margins){
+  .g--margin-top-#{$i}{
+    margin-top: nth($margins, $i);
+  }
+}
+
+@for $i from 1 through length($margins){
+  .g--margin-right-#{$i}{
+    margin-right: nth($margins, $i);
+  }
+}
+
+@for $i from 1 through length($margins){
+  .g--margin-bottom-#{$i}{
+    margin-bottom: nth($margins, $i);
+  }
+}
+
+@for $i from 1 through length($margins){
+  .g--margin-left-#{$i}{
+    margin-left: nth($margins, $i);
+  }
+}
+
+//$index: 0;
+// @each $value in $margins {
+//  .g--margin-#{$index} {
+//    margin: $value;
+//  }
+//  $index: $index + 1;
+//}
+
+
+
+
+
+
+
+
+
+
+
+
