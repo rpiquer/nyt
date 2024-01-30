@@ -46,6 +46,23 @@
   justify-self: flex-end;
 }
 
+.l-area-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 columnas con igual ancho */
+}
+
+@media (min-width: 576px) {
+  .l-area-2--1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .l-area-2--2\@desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .c-header {
   --c-subheader-border-color: var(--color-black-5);
   border-bottom: 1px solid var(--c-subheader-border-color);
